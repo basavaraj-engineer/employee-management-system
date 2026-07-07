@@ -22,4 +22,9 @@ public class EmployeeController {
         return employeeService.saveEmployee(employee);
     }
 
+    @GetMapping(value = "/getemployee/{id}")
+    public Employee getEmployeeData(@PathVariable int id) {
+        return employeeService.getEmployeeData(id);
+    }
+
 }
