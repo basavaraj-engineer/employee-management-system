@@ -10,8 +10,6 @@ pipeline {
 
         stage('Checkout') {
             steps {
-
-            QZZ
                 checkout scm
             }
         }
