@@ -77,6 +77,15 @@ pipeline {
 
             }
         }
+        stage('Docker Test') {
+
+            steps {
+
+                bat 'docker --version'
+
+            }
+
+        }
 
 
     }
